@@ -4,16 +4,143 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    color: white;
 }
 
 body {
     font-family: 'Oswald', sans-serif;
     font-size: 16px;
     line-height: 1.5;
+    background-color: rgb(35, 31, 31);
 }
 
 .container {
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 30px;
+}
+img {
+    max-width: 100%;
+}
+
+header {
+    background-color: rgb(19, 17, 17);
+    height: 80px;
+}
+
+header .container {
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    height:100%;
+}
+
+.logo p {
+    font-size: 42px;
+    color: rgb(163, 80, 80);
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+.guide ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style-type: none;
+    font-size: 25px;
+    text-decoration:underline;
+}
+
+.guide a {
+    text-decoration: none;
+    color: white;
+}
+
+.guide a:hover {
+    color: rgb(53, 213, 222);
+}
+
+.about {
+
+}
+
+.about .container {
+    display: flex;
+    margin: 50px auto;
+    gap: 30px;
+}
+
+.about .text {
+    display:flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 20px 0px;
+    font-size: 30px;
+}
+
+.text .p-about {
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.database {
+    background-color: rgb(19, 17, 17);
+    
+}
+
+.database .container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    padding: 40px 30px;
+}
+
+.database .title {
+    display:flex;
+    font-size: 36px;
+    text-decoration: underline;
+    background-color:rgb(130, 50, 50);
+    color: rgb(19, 17, 17);
+    padding: 4px 40px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.projects {
+    display:flex;
+    gap: 30px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.recipe,
+.landing-page,
+.coming-soon {
+    display:flex;
+    flex-direction: column;
+    max-width: 250px;
+    height: 370px;
+    background-color:rgb(163, 80, 80);
+    padding: 10px;
+    border-radius: 20px;
+}
+.database .box {
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right:10px;
+}
+.projects .text {
+    display: flex;
+    align-self: flex-end;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+}
+
+.database img {
+    height: 200px;
+    width: 220px;
+    border-radius: 20px;
 }
