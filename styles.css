@@ -60,10 +60,6 @@ header .container {
     color: rgb(53, 213, 222);
 }
 
-.about {
-
-}
-
 .about .container {
     display: flex;
     margin: 50px auto;
@@ -137,10 +133,107 @@ header .container {
     flex-direction:column;
     align-items: center;
     text-align: center;
+    color: darkgray;   
+}
+
+.text h2 {
+    text-decoration: underline;
+    color: black;
 }
 
 .database img {
     height: 200px;
     width: 220px;
     border-radius: 20px;
+}
+
+.contact {
+    background-color: rgb(42, 42, 42);
+    
+}
+
+.contact .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    gap: 30px;
+}
+
+.contact h2 {
+    font-size: 40px;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.contact .socials {
+    display:flex;
+    justify-content: center;
+    gap: 80px;    
+}
+
+.github,
+.linkedin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 1 300px;
+    text-align: center;
+    font-size: 26px;
+    width: 250px;
+    border: 5px;
+    flex-shrink: 1;
+    border-color: black;
+    border-style: solid;
+    padding: 10px 25px;
+}
+
+.github a,
+.linkedin a {
+    text-decoration: none;
+}
+
+.github:hover,
+.linkedin:hover {
+    background-color: rgb(147, 146, 146);
+}
+
+.socials h3 {
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+.socials p {
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.socials img {
+    height: 150px;
+    width: 150px;
+}
+
+footer {
+    background-color: black;
+    height: 60px;
+}
+
+footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+footer .container p {
+    color: rgb(163, 80, 80);
+}
+
+@media (max-width:900px) {
+    .about .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about img {
+        max-height:300px;
+    }
 }
